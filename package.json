@@ -38,6 +38,7 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-prism-plus": "^2.0.1",
     "rehype-slug": "^5.0.1",
+    "@radix-ui/react-portal": "^1.1.10",
     "slugify": "^1.6.5",
     "tailwindcss": "^4.1.17",
     "vite-tsconfig-paths": "^6.0.2"

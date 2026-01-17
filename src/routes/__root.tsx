@@ -10,7 +10,7 @@ import { MobileNavTrigger } from '@/features/site/MobileNavTrigger'
 import { NavigationScrollReveal } from '@/features/site/Navigation/NavigationScrollReveal'
 import { SiteNavigation } from '@/features/site/SiteNavigation'
 
-import '../styles/main.css'
+import css from '../styles/main.css?url'
 
 // import Header from '../components/Header'
 
@@ -33,7 +33,7 @@ export const Route = createRootRoute({
     links: [
       {
         rel: 'stylesheet',
-        href: appCss,
+        href: css,
       },
     ],
   }),

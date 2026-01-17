@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react'
 import { useRouterListener } from '../router/context/RouterComposerContext'
 import { useHandleLinkClicks } from './hooks'
 
-import ImageSplash from '@/public/actual/splash.jpg'
+import ImageSplash from '@root/public/actual/splash.jpg'
 
 export const Sail = () => {
   const animator = useAnimator<'sail'>()

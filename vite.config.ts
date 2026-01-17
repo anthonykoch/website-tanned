@@ -11,6 +11,7 @@ import { cloudflare } from '@cloudflare/vite-plugin'
 const config = defineConfig({
   resolve: {
     alias: {
+      '@root': fileURLToPath(new URL('./', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },

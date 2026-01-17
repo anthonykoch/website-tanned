@@ -1,7 +1,7 @@
-import ImageOpalcameraHomeFull1000w from '@/public/actual/opalcamera-home-full-1000w.jpg'
-import ImageOpalcameraHomeFull1800w from '@/public/actual/opalcamera-home-full-1800w.jpg'
-import ImageOpalcameraHomeFull750w from '@/public/actual/opalcamera-home-full-750w.jpg'
-import ImageEmptyMacbook from '@/public/final-compressed/empty-macbook.png'
+import ImageOpalcameraHomeFull1000w from '@root/public/actual/opalcamera-home-full-1000w.jpg'
+import ImageOpalcameraHomeFull1800w from '@root/public/actual/opalcamera-home-full-1800w.jpg'
+import ImageOpalcameraHomeFull750w from '@root/public/actual/opalcamera-home-full-750w.jpg'
+import ImageEmptyMacbook from '@root/public/final-compressed/empty-macbook.png'
 import {
   motion,
   MotionValue,
