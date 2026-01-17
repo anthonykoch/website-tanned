@@ -1,0 +1,94 @@
+/* Rift Soft - Light */
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Light.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-LightItalic.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Rift Soft - Regular */
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Regular.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Italic.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Rift Soft - Medium */
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Medium.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-MediumItalic.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Rift Soft - Demi */
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Demi.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Demi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-DemiItalic.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-DemiItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Rift Soft - Bold */
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-Bold.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rift Soft';
+  src: url('/fonts/rift-soft/RiftSoft-BoldItalic.woff2') format('woff2'),
+       url('/fonts/rift-soft/RiftSoft-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

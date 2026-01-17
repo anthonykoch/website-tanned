@@ -1,0 +1,188 @@
+@theme {
+  --nav-height: 500px;
+  --nav-height-mobile: 550px;
+  --nav-link-color--active: rgba(0, 0, 0, 0.7);
+  --nav-link-border-width: 0;
+  --sidebar-width: 300px;
+  --site-header-height: 550px;
+
+  /* Colors */
+  --color-transparent: rgba(0, 0, 0, 0);
+  --color-overlay-bg: #2b292b;
+  --color-body: #333;
+  --color-link: rgb(97 150 204);
+
+  --color-copy-2: #428889;
+  --color-copy-3: #1d3030;
+
+  --color-primary-invert: #1746d3;
+
+  --color-seafoam-100: #e4efeb;
+  --color-seafoam-300: #1beaa4;
+  --color-seafoam-500: #14e595;
+
+  --color-primary-100: #fdf7d4;
+  --color-primary-200: #fceeaa;
+  --color-primary-300: #f8e07f;
+  --color-primary-400: #f1d05e;
+  --color-primary-500: #e8b92c;
+  --color-primary-600: #c79920;
+  --color-primary-700: #a77b16;
+  --color-primary-800: #865f0e;
+  --color-primary-900: #6f4a08;
+
+  --font-backup: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+  --font-display: 'Rift Soft', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+  --font-link: 'Rift Soft', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+
+  --font-heading: 'visby', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+  /* --font-heading: 'greycliff cf', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif; */
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+  --font-code: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', monospace;
+
+  /* Max widths */
+  --max-width-post: 720px;
+  --max-width-post-wide: 820px;
+  --max-width-site: 2100px;
+  --max-width-common: 1232px;
+
+  /* Breakpoints (for reference in media queries) */
+  --breakpoint-sm: 360px;
+  --breakpoint-md: 540px;
+  --breakpoint-lg: 720px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1200px;
+  --breakpoint-3xl: 1400px;
+  --breakpoint-4xl: 1600px;
+  --breakpoint-5xl: 2000px;
+  --breakpoint-macbook16: 1600px;
+
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+
+  --spacing-gutter: 20px;
+  --spacing-gutter-lg: 24px;
+
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* --drop-shadow-button: drop-shadow(3px 4px 7px rgba(0,0,0,.2)); */
+  --shadow-box: 0 20px 30px -9px rgb(0 0 0/20%);
+
+  --shadow-button: 0 24px 60px -9px rgb(0 0 0/20%);
+  --shadow-button-2: 0 20px 50px -4px #0003;
+  --shadow-button-none: 0 24px 60px -9px rgb(0 0 0/0%);
+
+  /* inset 0 0px 120px -1px #0000001a */
+  /* box-shadow: inset 0 0px 120px -1px #c6aaa3; */
+}
+
+@utility drop-shadow-phone {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+@utility copy-heading-2 {
+  font-family: theme(--font-heading);
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+
+@utility copy-heading-2-sm {
+  font-family: theme(--font-heading);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.9px;
+  line-height: 36px;
+}
+
+@utility copy-body-4 {
+  font-size: 17px;
+  font-family: theme(--font-body);
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: -0.5px;
+}
+
+@utility copy-body-4-sm {
+  font-size: 16px;
+  font-family: theme(--font-body);
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+@utility copy-largest {
+  @apply text-[clamp(38px,6.5vw,100px)] leading-none font-heading font-600 -tracking-wide;
+  color: theme(--color-copy-3);
+}
+
+@utility striped {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+
+    rgba(0, 0, 0, 0.06) 10px,
+    rgba(0, 0, 0, 0.06) 20px
+  );
+}
+
+.gradient-flow {
+  background: linear-gradient(90deg, #f09, #0ff, #9f0, #f09);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: flow 7s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-90deg, #4f4550, #2a232a);
+  /* background-image: linear-gradient(
+    -90deg,
+    theme(--color-copy-secondary),
+    black
+  ); */
+  /* background-image: linear-gradient(-90deg, #e6ddc3, white); */
+  /* linear-gradient(-90deg, #e6ddc3, #572d41) */
+  /* background-image: linear-gradient(90deg, #898989, #494949); */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+:root {
+  --mf-phone-translate-left: -50%;
+  --mf-phone-translate-right: 50%;
+}
+
+@media (min-width: theme(--breakpoint-lg)) {
+  :root {
+    --mf-phone-translate-left: -75%;
+    --mf-phone-translate-right: 75%;
+  }
+}
