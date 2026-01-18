@@ -161,8 +161,8 @@ export const ExhibitPages = () => {
                 </p>
               </div>
               <img
-                src={ImageShowcaseShopTadpole1200w.src}
-                srcSet={`${ImageShowcaseShopTadpole800w.src} 800w, ${ImageShowcaseShopTadpole1200w.src} 1200w, ${ImageShowcaseShopTadpole1800w.src} 1800w, ${ImageShowcaseShopTadpole2400w.src} 2400w, ${ImageShowcaseShopTadpole3000w.src} 3000w`}
+                src={ImageShowcaseShopTadpole1200w}
+                srcSet={`${ImageShowcaseShopTadpole800w} 800w, ${ImageShowcaseShopTadpole1200w} 1200w, ${ImageShowcaseShopTadpole1800w} 1800w, ${ImageShowcaseShopTadpole2400w} 2400w, ${ImageShowcaseShopTadpole3000w} 3000w`}
                 sizes="(max-width: 1024px) 100vw, 120vw"
                 className="h-[60vh] lg:h-[80vh] w-auto"
               />
@@ -176,8 +176,8 @@ export const ExhibitPages = () => {
               </div>
               <div className="relative">
                 <img
-                  src={ImageShowcaseHome1200w.src}
-                  srcSet={`${ImageShowcaseHome800w.src} 800w, ${ImageShowcaseHome1200w.src} 1200w, ${ImageShowcaseHome1800w.src} 1800w, ${ImageShowcaseHome2400w.src} 2400w, ${ImageShowcaseHome3000w.src} 3000w`}
+                  src={ImageShowcaseHome1200w}
+                  srcSet={`${ImageShowcaseHome800w} 800w, ${ImageShowcaseHome1200w} 1200w, ${ImageShowcaseHome1800w} 1800w, ${ImageShowcaseHome2400w} 2400w, ${ImageShowcaseHome3000w} 3000w`}
                   sizes="(max-width: 1024px) 100vw, 120vw"
                   className="h-[60vh] lg:h-[80vh] w-auto"
                 />
@@ -203,8 +203,8 @@ export const ExhibitPages = () => {
                 </p>
               </div>
               <img
-                src={ImageShowcaseDownloads1200w.src}
-                srcSet={`${ImageShowcaseDownloads800w.src} 800w, ${ImageShowcaseDownloads1200w.src} 1200w, ${ImageShowcaseDownloads1800w.src} 1800w, ${ImageShowcaseDownloads2400w.src} 2400w, ${ImageShowcaseDownloads3000w.src} 3000w`}
+                src={ImageShowcaseDownloads1200w}
+                srcSet={`${ImageShowcaseDownloads800w} 800w, ${ImageShowcaseDownloads1200w} 1200w, ${ImageShowcaseDownloads1800w} 1800w, ${ImageShowcaseDownloads2400w} 2400w, ${ImageShowcaseDownloads3000w} 3000w`}
                 sizes="(max-width: 1024px) 100vw, 120vw"
                 className="h-[60vh] lg:h-[80vh] w-auto"
               />
@@ -233,8 +233,8 @@ export const ExhibitPages = () => {
               <div className="pb-4" />
 
               <img
-                src={ImageShowcaseDoctor1200w.src}
-                srcSet={`${ImageShowcaseDoctor800w.src} 800w, ${ImageShowcaseDoctor1200w.src} 1200w, ${ImageShowcaseDoctor1800w.src} 1800w, ${ImageShowcaseDoctor2400w.src} 2400w, ${ImageShowcaseDoctor3000w.src} 3000w`}
+                src={ImageShowcaseDoctor1200w}
+                srcSet={`${ImageShowcaseDoctor800w} 800w, ${ImageShowcaseDoctor1200w} 1200w, ${ImageShowcaseDoctor1800w} 1800w, ${ImageShowcaseDoctor2400w} 2400w, ${ImageShowcaseDoctor3000w} 3000w`}
                 sizes="(max-width: 1024) 100vw, 1000px"
                 className="h-[60vh] lg:h-[62vh] w-auto"
               />

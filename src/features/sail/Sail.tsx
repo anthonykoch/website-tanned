@@ -125,9 +125,9 @@ export const Sail = () => {
           {/* #bec9bb */}
 
           <img
-            src={ImageSplash.src}
-            // src={ImageSplash1600w.src}
-            // srcSet={`${ImageSplash800w.src} 800w, ${ImageSplash1200w.src} 1200w, ${ImageSplash1600w.src} 1600w, ${ImageSplash2000w.src} 2000w`}
+            src={ImageSplash}
+            // src={ImageSplash1600w}
+            // srcSet={`${ImageSplash800w} 800w, ${ImageSplash1200w} 1200w, ${ImageSplash1600w} 1600w, ${ImageSplash2000w} 2000w`}
             sizes="100vw"
             className="absolute size-full object-cover"
           />

@@ -166,15 +166,15 @@ export const OpalFirst = () => {
               <div className="relative aspect-1648/949 w-full" ref={container}>
                 <motion.div className="will-change-transform size-full">
                   <motion.img
-                    src={ImageOpalFirst2_1500w.src}
-                    srcSet={`${ImageOpalFirst2_1000w.src} 1000w, ${ImageOpalFirst2_1500w.src} 1500w, ${ImageOpalFirst2_2200w.src} 2200w, ${ImageOpalFirst2_3000w.src} 3000w`}
+                    src={ImageOpalFirst2_1500w}
+                    srcSet={`${ImageOpalFirst2_1000w} 1000w, ${ImageOpalFirst2_1500w} 1500w, ${ImageOpalFirst2_2200w} 2200w, ${ImageOpalFirst2_3000w} 3000w`}
                     sizes="100vw"
                     className="absolute left-0 size-full z-20 will-change-[clip-path]"
                     style={{ clipPath }}
                   />
                   <motion.img
-                    src={ImageOpalFirst1_1500w.src}
-                    srcSet={`${ImageOpalFirst1_1000w.src} 1000w, ${ImageOpalFirst1_1500w.src} 1500w, ${ImageOpalFirst1_2200w.src} 2200w, ${ImageOpalFirst1_3000w.src} 3000w`}
+                    src={ImageOpalFirst1_1500w}
+                    srcSet={`${ImageOpalFirst1_1000w} 1000w, ${ImageOpalFirst1_1500w} 1500w, ${ImageOpalFirst1_2200w} 2200w, ${ImageOpalFirst1_3000w} 3000w`}
                     sizes="100vw"
                     className="absolute left-0 size-full z-10"
                     ref={img}

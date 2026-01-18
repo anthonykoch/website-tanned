@@ -8,8 +8,6 @@ import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
 import ImageHeroBg from '@/images/actual/hero-bg.svg'
 
-console.log(ImagePhoneOpalTadpoleShop600w)
-
 export const Hero = () => {
   const target = useRef<HTMLDivElement>(null)
 
@@ -100,8 +98,8 @@ export const Hero = () => {
             className="will-change-transform min-w-[1200px] absolute top-[-100px] left-1/2 -translate-x-1/2 -z-10"
           />
           <img
-            src={ImagePhoneOpalTadpoleShop1200w.src}
-            srcSet={`${ImagePhoneOpalTadpoleShop600w.src} 600w, ${ImagePhoneOpalTadpoleShop900w.src} 900w, ${ImagePhoneOpalTadpoleShop1200w.src} 1200w, ${ImagePhoneOpalTadpoleShop1600w.src} 1600w`}
+            src={ImagePhoneOpalTadpoleShop1200w}
+            srcSet={`${ImagePhoneOpalTadpoleShop600w} 600w, ${ImagePhoneOpalTadpoleShop900w} 900w, ${ImagePhoneOpalTadpoleShop1200w} 1200w, ${ImagePhoneOpalTadpoleShop1600w} 1600w`}
             sizes="(max-width: 768px) 300px, 330px"
             className="z-50 relative will-change-transform max-w-[300px] md:max-w-[330px] w-full mx-auto"
           />

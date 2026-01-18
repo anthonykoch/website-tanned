@@ -75,7 +75,7 @@ export const ModernFertilityTriplePhone = () => {
               <motion.div
                 className="size-full bg-no-repeat bg-size-[auto_500px] lg:bg-size-[auto_800px] bg-position-[center_70vh] md:bg-position-[center_65vh] lg:bg-position-[center_60vh] 2xl:bg-position-[center_60vh] pointer-events-none"
                 style={{
-                  backgroundImage: `url(${ImagePhoneBg.src})`,
+                  backgroundImage: `url(${ImagePhoneBg})`,
                   scale: scaleImg,
                 }}
               />
@@ -87,21 +87,21 @@ export const ModernFertilityTriplePhone = () => {
               ref={target}
             />
             <img
-              src={ImagePhoneMfHome1300w.src}
-              srcSet={`${ImagePhoneMfHome600w.src} 600w, ${ImagePhoneMfHome900w.src} 900w, ${ImagePhoneMfHome1300w.src} 1300w, ${ImagePhoneMfHome1700w.src} 1700w`}
+              src={ImagePhoneMfHome1300w}
+              srcSet={`${ImagePhoneMfHome600w} 600w, ${ImagePhoneMfHome900w} 900w, ${ImagePhoneMfHome1300w} 1300w, ${ImagePhoneMfHome1700w} 1700w`}
               sizes="(max-width: 1024px) 200px, 298px"
               className="mx-auto w-full relative z-20"
             />
             <motion.img
-              src={ImagePhoneMfDashboardPlan1300w.src}
-              srcSet={`${ImagePhoneMfDashboardPlan600w.src} 600w, ${ImagePhoneMfDashboardPlan900w.src} 900w, ${ImagePhoneMfDashboardPlan1300w.src} 1300w, ${ImagePhoneMfDashboardPlan1700w.src} 1700w`}
+              src={ImagePhoneMfDashboardPlan1300w}
+              srcSet={`${ImagePhoneMfDashboardPlan600w} 600w, ${ImagePhoneMfDashboardPlan900w} 900w, ${ImagePhoneMfDashboardPlan1300w} 1300w, ${ImagePhoneMfDashboardPlan1700w} 1700w`}
               sizes="(max-width: 1024px) 200px, 298px"
               className="absolute top-0 left-0 w-full h-auto will-change-transform"
               style={{ x: transformLeft, scale }}
             />
             <motion.img
-              src={ImagePhoneMfPrenatalPdp1300w.src}
-              srcSet={`${ImagePhoneMfPrenatalPdp600w.src} 600w, ${ImagePhoneMfPrenatalPdp900w.src} 900w, ${ImagePhoneMfPrenatalPdp1300w.src} 1300w, ${ImagePhoneMfPrenatalPdp1700w.src} 1700w`}
+              src={ImagePhoneMfPrenatalPdp1300w}
+              srcSet={`${ImagePhoneMfPrenatalPdp600w} 600w, ${ImagePhoneMfPrenatalPdp900w} 900w, ${ImagePhoneMfPrenatalPdp1300w} 1300w, ${ImagePhoneMfPrenatalPdp1700w} 1700w`}
               sizes="(max-width: 1024px) 200px, 298px"
               className="absolute top-0 left-0 w-full h-auto will-change-transform"
               style={{ x: transformRight, scale }}

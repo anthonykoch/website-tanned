@@ -21,16 +21,16 @@ export const ModernFertilityShowcase = () => {
         <div className="flex flex-wrap lg:flex-nowrap gap-1 w-full">
           <div className="bg-[#E7E7E7] py-18 lg:py-10 lg:px-4 flex items-center justify-center w-full lg:w-[65%]">
             <img
-              src={ImageIpadMfPrenatalsPdp1600w.src}
-              srcSet={`${ImageIpadMfPrenatalsPdp800w.src} 800w, ${ImageIpadMfPrenatalsPdp1600w.src} 1600w, ${ImageIpadMfPrenatalsPdp2400w.src} 2400w`}
+              src={ImageIpadMfPrenatalsPdp1600w}
+              srcSet={`${ImageIpadMfPrenatalsPdp800w} 800w, ${ImageIpadMfPrenatalsPdp1600w} 1600w, ${ImageIpadMfPrenatalsPdp2400w} 2400w`}
               sizes="(max-width: 720px) 90vw, 45vw"
               className="max-w-[calc(100%-48px)] lg:max-w-[88%] lg:max-h-[90%] object-contain w-full h-auto drop-shadow-phone"
             />
           </div>
           <div className="bg-[#E7E7E7] py-18 lg:px-4 flex items-center justify-center w-full lg:w-[35%]">
             <img
-              src={ImagePhoneMfCheckout1300w.src}
-              srcSet={`${ImagePhoneMfCheckout900w.src} 900w, ${ImagePhoneMfCheckout1300w.src} 1300w, ${ImagePhoneMfCheckout1700w.src} 1700w`}
+              src={ImagePhoneMfCheckout1300w}
+              srcSet={`${ImagePhoneMfCheckout900w} 900w, ${ImagePhoneMfCheckout1300w} 1300w, ${ImagePhoneMfCheckout1700w} 1700w`}
               sizes="400px"
               className="w-[80%] lg:w-[calc(100%-64px)] max-w-[360px] drop-shadow-phone"
             />
@@ -39,16 +39,16 @@ export const ModernFertilityShowcase = () => {
         <div className="flex flex-wrap lg:flex-nowrap gap-1 w-full">
           <div className="bg-[#E7E7E7] py-18 lg:px-4 flex items-center justify-center w-full lg:w-[35%]">
             <img
-              src={ImagePhoneMfDashboardPlan1300w.src}
-              srcSet={`${ImagePhoneMfDashboardPlan600w.src} 600w, ${ImagePhoneMfDashboardPlan900w.src} 900w, ${ImagePhoneMfDashboardPlan1300w.src} 1300w, ${ImagePhoneMfDashboardPlan1700w.src} 1700w`}
+              src={ImagePhoneMfDashboardPlan1300w}
+              srcSet={`${ImagePhoneMfDashboardPlan600w} 600w, ${ImagePhoneMfDashboardPlan900w} 900w, ${ImagePhoneMfDashboardPlan1300w} 1300w, ${ImagePhoneMfDashboardPlan1700w} 1700w`}
               sizes="400px"
               className="w-[80%] lg:w-[calc(100%-64px)] max-w-[360px] drop-shadow-phone"
             />
           </div>
           <div className="bg-[#E7E7E7] py-18 lg:py-10 lg:px-4 flex items-center justify-center w-full lg:w-[65%]">
             <img
-              src={ImageIpadMfDashboardHome1600w.src}
-              srcSet={`${ImageIpadMfDashboardHome800w.src} 800w, ${ImageIpadMfDashboardHome1600w.src} 1600w, ${ImageIpadMfDashboardHome2400w.src} 2400w`}
+              src={ImageIpadMfDashboardHome1600w}
+              srcSet={`${ImageIpadMfDashboardHome800w} 800w, ${ImageIpadMfDashboardHome1600w} 1600w, ${ImageIpadMfDashboardHome2400w} 2400w`}
               sizes="(max-width: 720px) 90vw, 45vw"
               className="max-w-[calc(100%-48px)] lg:max-w-[88%] lg:max-h-[90%] object-contain w-full h-auto drop-shadow-phone"
             />

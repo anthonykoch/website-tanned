@@ -60,10 +60,10 @@ export const OpalIntroSection = () => {
           x={x}
           container={opalCameraImagesRef}
           images={[
-            <img src={ImageGirl.src} className="h-[320px] md:h-[420px]" />,
+            <img src={ImageGirl} className="h-[320px] md:h-[420px]" />,
             <img
-              src={ImageOpalTadpole800w.src}
-              srcSet={`${ImageOpalTadpole400w.src} 400w, ${ImageOpalTadpole800w.src} 800w, ${ImageOpalTadpole1200w.src} 1200w`}
+              src={ImageOpalTadpole800w}
+              srcSet={`${ImageOpalTadpole400w} 400w, ${ImageOpalTadpole800w} 800w, ${ImageOpalTadpole1200w} 1200w`}
               sizes="(max-width: 768px) 320px, 420px"
               className="h-[320px] md:h-[420px]"
             />,
@@ -99,7 +99,7 @@ export const OpalIntroSection = () => {
           <div className="aspect-784/1190 relative">
             {/* <div className="striped rounded-md size-full"></div> */}
             <img
-              src={ImageGirl.src}
+              src={ImageGirl}
               className="selector-opal-camera-image  absolute size-full left-0 top-0"
             />
           </div>
@@ -111,8 +111,8 @@ export const OpalIntroSection = () => {
           </p>
           <div className="aspect-920/608 relative">
             <img
-              src={ImageOpalTadpole800w.src}
-              srcSet={`${ImageOpalTadpole400w.src} 400w, ${ImageOpalTadpole800w.src} 800w, ${ImageOpalTadpole1200w.src} 1200w`}
+              src={ImageOpalTadpole800w}
+              srcSet={`${ImageOpalTadpole400w} 400w, ${ImageOpalTadpole800w} 800w, ${ImageOpalTadpole1200w} 1200w`}
               sizes="(max-width: 1200px) 100vw, 42.87vw"
               className="selector-opal-camera-image object-cover absolute size-full top-0 left-0"
             />

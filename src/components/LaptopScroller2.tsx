@@ -45,7 +45,7 @@ export const LaptopScroller2: FC<{ y: MotionValue }> = ({ y }) => {
         <div>
           <motion.div className="relative z-10 will-change-transform">
             <img
-              src={ImageEmptyMacbook.src}
+              src={ImageEmptyMacbook}
               className="w-full mx-auto absolute z-20 top-0 left-1/2 -translate-x-1/2"
               // className="w-full max-w-[800px] xl:max-w-[1200px] mx-auto absolute z-20 top-0 left-1/2 -translate-x-1/2"
             />
@@ -60,8 +60,8 @@ export const LaptopScroller2: FC<{ y: MotionValue }> = ({ y }) => {
                     </span>
                   </div>
                   <motion.img
-                    src={ImageOpalcameraHomeFull1000w.src}
-                    srcSet={`${ImageOpalcameraHomeFull750w.src} 750w, ${ImageOpalcameraHomeFull1000w.src} 1000w, ${ImageOpalcameraHomeFull1800w.src} 1800w`}
+                    src={ImageOpalcameraHomeFull1000w}
+                    srcSet={`${ImageOpalcameraHomeFull750w} 750w, ${ImageOpalcameraHomeFull1000w} 1000w, ${ImageOpalcameraHomeFull1800w} 1800w`}
                     sizes="(max-width: 400px) 90vw, (max-width: 800px) 800px, 1200px"
                     className="absolute top-0 left-0 w-full h-auto will-change-transform object-top z-20"
                     loading="lazy"
