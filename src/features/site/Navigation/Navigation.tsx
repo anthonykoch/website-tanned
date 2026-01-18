@@ -16,7 +16,7 @@ export const Navigation: React.FC<{
     <nav>
       <div className="inline-flex list-none *:relative">
         <li className="hidden xl:block">
-          <Link href="/blog">
+          <Link to="/blog">
             <MenuItemAppearance colorVariant={colorVariant}>
               Blog
             </MenuItemAppearance>
@@ -24,7 +24,7 @@ export const Navigation: React.FC<{
         </li>
         <li className="hidden xl:block">
           <Link
-            href="/#work"
+            to="/#work"
             onClick={(e) => {
               if (pathname === '/') {
                 e.preventDefault()
@@ -39,7 +39,7 @@ export const Navigation: React.FC<{
         </li>
         <li className="hidden xl:block">
           <Link
-            href="#contact"
+            to="#contact"
             onClick={(e) => {
               e.preventDefault()
               scrollTo('#contact')
