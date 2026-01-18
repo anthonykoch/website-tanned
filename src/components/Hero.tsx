@@ -6,6 +6,9 @@ import { easeOutCubic } from '@/utils/animation'
 import { scrollTo } from '@/utils/dom'
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
+import ImageHeroBg from '@/images/actual/hero-bg.svg'
+
+console.log(ImagePhoneOpalTadpoleShop600w)
 
 export const Hero = () => {
   const target = useRef<HTMLDivElement>(null)
@@ -93,7 +96,7 @@ export const Hero = () => {
         >
           <div className="pb-20" />
           <img
-            src="/actual/hero-bg.svg"
+            src={ImageHeroBg}
             className="will-change-transform min-w-[1200px] absolute top-[-100px] left-1/2 -translate-x-1/2 -z-10"
           />
           <img

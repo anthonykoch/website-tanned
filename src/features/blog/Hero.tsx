@@ -1,5 +1,7 @@
 import classNames from 'classnames'
 import { FC, ReactNode } from 'react'
+import ImageBlogHeroMobile from '@/images/blog-hero-m.jpg'
+import ImageBlogHeroDesktop from '@/images/blog-hero-d.jpg'
 
 export const BlogPlaceholder: FC<{
   children?: ReactNode
@@ -27,11 +29,11 @@ export const BlogImages = () => {
   return (
     <>
       <img
-        src="/blog-hero-m.jpg"
+        src={ImageBlogHeroMobile}
         className="md:hidden object-cover object-right size-full absolute"
       />
       <img
-        src="/blog-hero-d.jpg"
+        src={ImageBlogHeroDesktop}
         className="hidden md:block object-cover lg:object-[90%_0%] xl:object-[90%_35%] 2xl:object-[85%_-200px] size-full absolute opacity-50"
       />
     </>

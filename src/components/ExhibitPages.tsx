@@ -46,6 +46,8 @@ import ImageShowcaseHome2400w from '@/images/actual/showcase-home-inner_2400w.jp
 import ImageShowcaseHome3000w from '@/images/actual/showcase-home-inner_3000w.jpg'
 import ImageShowcaseHome800w from '@/images/actual/showcase-home-inner_800w.jpg'
 
+import VideoSrc from '@/images/actual/mobile-nav-final.mp4'
+
 import {
   motion,
   resize,
@@ -221,7 +223,7 @@ export const ExhibitPages = () => {
                 playsInline
                 className="pointer-events-none w-full"
               >
-                <source src="/actual/mobile-nav-final.mp4" type="video/mp4" />
+                <source src={VideoSrc} type="video/mp4" />
               </video>
             </div>
             <div className="  shrink-0" ref={last}>

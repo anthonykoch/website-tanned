@@ -2,6 +2,11 @@ import { useScrollX } from '@/hooks/use-scroll-x'
 import { useScroll } from 'motion/react'
 import { useRef } from 'react'
 import { FigCaption, MobileImageScroller } from './MobileImageScroller'
+import ImageMfFirstMobile from '@/images/final-compressed/mf-first-mobile.svg'
+import ImageMfHomepageMobile from '@/images/final-compressed/mf-homepage-mobile.png'
+import ImageMfRecommendedMobile from '@/images/final-compressed/mf-recommended-mobile.png'
+import ImageMfFirst from '@/images/final-compressed/mf-first.svg'
+import ImageMfHomepage from '@/images/final-compressed/mf-homepage.png'
 
 export const ModernFertilityHero = () => {
   const scrollerRef = useRef<HTMLDivElement>(null)
@@ -43,18 +48,18 @@ export const ModernFertilityHero = () => {
             images={[
               <div className="w-full aspect-472/855 relative">
                 <img
-                  src="/final-compressed/mf-first-mobile.svg"
+                  src={ImageMfFirstMobile}
                   className="h-[370px] md:h-[440px]  w-auto"
                 />
               </div>,
               <div className="w-full aspect-786/598 relative">
                 <img
-                  src="/final-compressed/mf-homepage-mobile.png"
+                  src={ImageMfHomepageMobile}
                   className="h-[370px] md:h-[440px]  w-auto"
                 />
               </div>,
               <img
-                src="/final-compressed/mf-recommended-mobile.png"
+                src={ImageMfRecommendedMobile}
                 className="h-[350px] w-auto lg:hidden"
               />,
             ]}
@@ -70,7 +75,7 @@ export const ModernFertilityHero = () => {
 
           <div className="max-lg:pb-4">
             <img
-              src="/final-compressed/mf-first.svg"
+              src={ImageMfFirst}
               className="max-lg:max-w-[400px]"
             />
           </div>
@@ -81,7 +86,7 @@ export const ModernFertilityHero = () => {
               A business dedicated to supporting and informing women about their
               fertility options.
             </p>
-            <img src="/final-compressed/mf-homepage.png" />
+            <img src={ImageMfHomepage} />
           </div>
         </div>
         {/* <div className="col-span-12 xl:col-span-2 2xl:col-span-2">
