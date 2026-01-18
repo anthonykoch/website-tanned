@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react'
+import { useRouter } from '@tanstack/react-router'
+import { useEffect } from 'react'
 import { useRouterComposer } from '../router/context/RouterComposerContext'
-// import { EventEmitter } from 'eventemitter3'
 
 const isInternalLink = (href: string) => {
   try {
@@ -21,24 +21,8 @@ const isCurrentLink = (href: string) => {
 }
 
 export const useHandleLinkClicks = () => {
-  return 
   const router = useRouter()
   const composer = useRouterComposer()
-  const pathname = usePathname()
-  const previousPathname = useRef(pathname)
-  const timeout = useRef<any>(null)
-
-  useEffect(() => {
-    if (previousPathname.current !== pathname) {
-      previousPathname.current = pathname
-      timeout.current = setTimeout(() => {
-        composer.notify('done')
-      }, 150)
-    }
-    return () => {
-      clearTimeout(timeout.current)
-    }
-  }, [pathname])
 
   useEffect(() => {
     const handleClick = async (e: MouseEvent) => {
@@ -54,7 +38,10 @@ export const useHandleLinkClicks = () => {
         e.preventDefault()
 
         await composer.notify('before')
-        router.push(target.href)
+
+        router.navigate({
+          to: target.pathname,
+        })
       }
     }
 

@@ -1,14 +1,20 @@
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
-import { Provider } from 'jotai'
-import { RouterComposerProvider } from '@/features/router/context/RouterComposerContext'
+import {
+  RouterComposerProvider
+} from '@/features/router/context/RouterComposerContext'
 import { Sail } from '@/features/sail/Sail'
 import { Animations } from '@/features/site/Animations'
 import { MobileNavigation } from '@/features/site/MobileNavigation/MobileNavigation'
 import { MobileNavTrigger } from '@/features/site/MobileNavTrigger'
 import { NavigationScrollReveal } from '@/features/site/Navigation/NavigationScrollReveal'
 import { SiteNavigation } from '@/features/site/SiteNavigation'
+import { TanStackDevtools } from '@tanstack/react-devtools'
+import {
+  HeadContent,
+  Scripts,
+  createRootRoute
+} from '@tanstack/react-router'
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+import { Provider } from 'jotai'
 
 import css from '../styles/main.css?url'
 
@@ -31,6 +37,19 @@ export const Route = createRootRoute({
       },
     ],
     links: [
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossOrigin: '',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap',
+      },
       {
         rel: 'stylesheet',
         href: css,

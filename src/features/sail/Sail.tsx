@@ -5,34 +5,43 @@ import { useAnimator } from '@/utils/animator'
 import { theme } from '@/utils/theme'
 import { animate } from 'motion/react'
 import { useEffect, useRef } from 'react'
-import { useRouterListener } from '../router/context/RouterComposerContext'
+import {
+  useRouterComposer,
+  useRouterListener,
+} from '../router/context/RouterComposerContext'
 import { useHandleLinkClicks } from './hooks'
 
 import ImageSplash from '@/images/actual/splash.jpg'
+import { useRouter } from '@tanstack/react-router'
 
 export const Sail = () => {
   const animator = useAnimator<'sail'>()
   const sail = useRef<HTMLDivElement>(null)
+  const router = useRouter()
+  const composer = useRouterComposer()
 
-  return null
+  useEffect(() => {
+    // const unsub = router.subscribe('onBeforeLoad', async (event) => {
+    //   animator.stopAll()
+    //   await composer.notify('before')
+    //   // console.log(event)
+    //   // Do your work here
+    //   // console.log('Navigation starting')
+    // })
 
-  // const router = useRouter()
+    const unsub2 = router.subscribe('onLoad', async (event) => {
+      await animator.wait()
+      composer.notify('done')
+      // console.log(event)
+      // Do your work here
+      // console.log('Navigation starting')
+    })
 
-  // useEffect(() => {
-  //   router.beforePopState(({ url }) => {
-  //     // Do your work here
-  //     console.log('About to navigate back to:', url)
-
-  //     // Perform async work if needed
-
-  //     // Return true to allow navigation, false to prevent it
-  //     return true
-  //   })
-
-  //   return () => {
-  //     router.beforePopState(() => true)
-  //   }
-  // }, [router])
+    return () => {
+      unsub()
+      unsub2()
+    }
+  }, [])
 
   useHandleLinkClicks()
 
