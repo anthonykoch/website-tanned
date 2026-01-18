@@ -21,7 +21,7 @@ export const Sail = () => {
   const composer = useRouterComposer()
 
   useEffect(() => {
-    // const unsub = router.subscribe('onBeforeLoad', async (event) => {
+    // const unsub = router.subscribe('onBeforeLoad', async () => {
     //   animator.stopAll()
     //   await composer.notify('before')
     //   // console.log(event)
@@ -29,7 +29,7 @@ export const Sail = () => {
     //   // console.log('Navigation starting')
     // })
 
-    const unsub2 = router.subscribe('onLoad', async (event) => {
+    const unsub2 = router.subscribe('onLoad', async () => {
       await animator.wait()
       composer.notify('done')
       // console.log(event)
@@ -38,7 +38,6 @@ export const Sail = () => {
     })
 
     return () => {
-      unsub()
       unsub2()
     }
   }, [])

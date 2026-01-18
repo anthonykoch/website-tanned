@@ -57,6 +57,14 @@ export const Route = createRootRoute({
     ],
   }),
 
+  notFoundComponent: () => {
+    return (
+      <div className="h-screen w-screen flex items-center justify-center">
+        <p className="top-[-10vh] relative font-heading text-[32px] leading-none font-500">404 | Page not found</p>
+      </div>
+    )
+  },
+
   shellComponent: RootDocument,
 })
 
