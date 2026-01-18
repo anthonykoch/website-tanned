@@ -1,6 +1,6 @@
 [
   {
-    "id": 12,
+    "id": "12",
     "title": "Integrating lazy loading into a ghost blog",
     "folder": "2020-03-04-integrating-lazy-loading-into-a-ghost-blog",
     "createdAt": "2020-03-04",
@@ -10,7 +10,7 @@
     "slug": "integrating-lazy-loading-into-a-ghost-blog"
   },
   {
-    "id": 11,
+    "id": "11",
     "title": "Image compressors compared",
     "folder": "2019-02-06-image-compressors-compared",
     "createdAt": "2019-02-06",
@@ -20,7 +20,7 @@
     "slug": "image-compressors-compared"
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "NextJS Impressions",
     "folder": "2018-10-09-nextjs-impressions",
     "createdAt": "2018-10-09",
@@ -30,7 +30,7 @@
     "slug": "nextjs-impressions"
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "OR operator gotcha",
     "folder": "2018-08-29-or-operator-gotcha",
     "createdAt": "2018-08-29",
@@ -40,7 +40,7 @@
     "slug": "or-operator-gotcha"
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Use normalize css",
     "folder": "2018-08-03-use-normalize-css",
     "createdAt": "2018-08-03",
@@ -50,7 +50,7 @@
     "slug": "use-normalize-css"
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Just Nuxt Things",
     "folder": "2018-07-29-just-nuxt-things",
     "createdAt": "2018-07-29",
@@ -60,7 +60,7 @@
     "slug": "just-nuxt-things"
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Understanding JavaScript Prototypes",
     "folder": "2016-01-21-understanding-javascript-prototypes",
     "createdAt": "2016-01-21",
@@ -70,7 +70,7 @@
     "slug": "understanding-javascript-prototypes"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Medium style image loading",
     "folder": "2016-01-07-medium-style-images",
     "createdAt": "2016-01-07",
@@ -80,7 +80,7 @@
     "slug": "medium-style-images"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Why you shouldn't loop arrays with for-in",
     "folder": "2015-12-03-why-you-shouldnt-loop-arrays-with-for-in",
     "createdAt": "2015-12-03",
@@ -90,7 +90,7 @@
     "slug": "why-you-shouldnt-loop-arrays-with-for-in"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Remember directories in Con Emu",
     "folder": "2015-11-15-remember-directories-in-con-emu",
     "createdAt": "2015-11-15",
@@ -100,7 +100,7 @@
     "slug": "remember-directories-in-con-emu"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "The tools I use",
     "folder": "2015-08-21-the-tools-i-use",
     "createdAt": "2015-08-21",
@@ -110,7 +110,7 @@
     "slug": "the-tools-i-use"
   },
   {
-    "id": 1,
+    "id": "1",
     "title": "My favorite features of ES2015",
     "folder": "2015-08-17-my-favorite-features-of-es2015",
     "createdAt": "2015-08-17",

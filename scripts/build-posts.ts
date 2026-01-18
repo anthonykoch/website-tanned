@@ -4,7 +4,7 @@ import fs from 'node:fs/promises'
 import matter from 'gray-matter'
 import path from 'node:path'
 
-const pattern = path.join(process.cwd(), 'posts/**/*.{md,mdx}')
+const pattern = path.join(process.cwd(), 'src/posts/**/*.{md,mdx}')
 
 async function buildPosts() {
   const files = await glob(pattern)
@@ -19,7 +19,7 @@ async function buildPosts() {
     } = matter(contents)
 
     return {
-      id,
+      id: String(id),
       title,
       folder,
       createdAt,

@@ -9,7 +9,7 @@ import { BlogPageAnimate } from '@/features/blog/Animate'
 
 export const getPostsList = createServerFn().handler(() => postsData)
 
-export const Route = createFileRoute('/blog')({
+export const Route = createFileRoute('/blog/')({
   component: Blog,
   loader: async () => {
     const posts = await getPostsList()

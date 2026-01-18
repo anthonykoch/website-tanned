@@ -10,7 +10,7 @@ import {
 } from 'motion/react'
 import { easeInQuart, easeOutExpo } from '@/utils/animation'
 import { useWindowEvent } from '@/hooks/use-window-event'
-import { debounce } from 'lodash'
+import { debounce } from 'lodash-es'
 import ImageOpalFirst1_1000w from '@/images/actual/opal-first-1_1000w.jpg'
 import ImageOpalFirst1_1500w from '@/images/actual/opal-first-1_1500w.jpg'
 import ImageOpalFirst1_2200w from '@/images/actual/opal-first-1_2200w.jpg'
