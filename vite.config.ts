@@ -6,7 +6,8 @@ import viteTsConfigPaths from 'vite-tsconfig-paths'
 import { fileURLToPath, URL } from 'url'
 
 import tailwindcss from '@tailwindcss/vite'
-import { cloudflare } from '@cloudflare/vite-plugin'
+import { postsPlugin } from './vite-plugin-posts'
+// import { cloudflare } from '@cloudflare/vite-plugin'
 
 const config = defineConfig({
   resolve: {
@@ -14,9 +15,17 @@ const config = defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    watch: {
+      
+      // Watch MDX files in posts directory
+      ignored: ['!**/posts/**/*.mdx'],
+    },
+  },
   plugins: [
+    postsPlugin(),
     devtools(),
-    cloudflare({ viteEnvironment: { name: 'ssr' } }),
+    // cloudflare({ viteEnvironment: { name: 'ssr' } }),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],

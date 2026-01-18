@@ -2,20 +2,12 @@ import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { Footer } from '@/features/site/footer/Footer'
 import { BlogHero } from '@/features/blog/Hero'
-import { getPosts } from '@/data/post'
+import postsData from '@/data/posts.json'
+// import { getPosts } from '@/data/posts'
 import { PostList } from '@/components/PostList'
 import { BlogPageAnimate } from '@/features/blog/Animate'
 
-// import {
-//   Zap,
-//   Server,
-//   Route as RouteIcon,
-//   Shield,
-//   Waves,
-//   Sparkles,
-// } from 'lucide-react'
-export const getPostsList = createServerFn().handler(() => getPosts())
-
+export const getPostsList = createServerFn().handler(() => postsData)
 
 export const Route = createFileRoute('/blog')({
   component: Blog,

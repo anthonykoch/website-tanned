@@ -1,5 +1,5 @@
 import { format } from 'date-fns'
-import { glob } from 'fast-glob'
+import { glob } from 'glob'
 import fs from 'node:fs/promises'
 import matter from 'gray-matter'
 import path from 'node:path'
